@@ -51,7 +51,12 @@
     </div>
 
     <script type="text/javascript">
-        document.getElementById("bg").style.minHeight=window.innerHeight+"px";
+        if(window.innerHeight<610){
+            document.getElementById("bg").style.minHeight="610px";
+        }else{
+            document.getElementById("bg").style.minHeight=window.innerHeight+"px";
+        }
+
     </script>
 
 </body>
