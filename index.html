@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <title>T-Soft - 团队信息</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
     <div id="bg" class="background">
-        <div class="title_bg"><div class="title">T-Soft</div></div>
         <div class="body_bg">
+
             <div class="body_bg2" align="center">
                 <div style="margin-left: 0;float: left">
                     <div class="body_photo"><img src="img/u1.jpg" class="body_photo"></div><div class="body_head"></div>
                     <div class="body_item2"></div>
                     <div class="body_item">
                         <div class="user_id">terrycr</div>
-                        <div class="info_text">YOUR INFORMATION</div>
+                        <div class="info_text">后台程序猿一只，不要问我过来干嘛的，我就是想和大家一起学习下前端，就酱╮(╯-╰)╭。。。</div>
                         <div class="skill_area"><img class="html5" src="img/html5.png"><img class="css3" src="img/css3.png"><img class="js" src="img/js.png"><img class="jquery" src="img/jquery.png"><img class="ps" src="img/ps_none.png"><img class="flash" src="img/flash_none.png"></div>
                     </div>
-                    <div class="body_item_temp"><div class="more_text">MORE</div></div>
+                    <div class="body_item_temp" onclick="more(0);"><div class="more_text">MORE</div></div>
                 </div>
 
                 <div style="margin-left: 135px;float: left">
@@ -26,26 +27,32 @@
                     <div class="body_item2"></div>
                     <div class="body_item">
                         <div class="user_id">陵七七最爱的我</div>
-                        <div class="info_text">YOUR INFORMATION</div>
+                        <div class="info_text">此人没有介绍</div>
                         <div class="skill_area"><img class="html5" src="img/html5.png"><img class="css3" src="img/css3.png"><img class="js" src="img/js.png"><img class="jquery" src="img/jquery_none.png"><img class="ps" src="img/ps_none.png"><img class="flash" src="img/flash_none.png"></div>
                     </div>
-                    <div class="body_item_temp"><div class="more_text">MORE</div></div>
+                    <div class="body_item_temp" onclick="more(1);"></a><div class="more_text">MORE</div></div>
                 </div>
 
                 <div style="margin-left: 270px;float: left">
                     <div class="body_photo"><img src="img/u3.png" class="body_photo"></div><div class="body_head"></div>
                     <div class="body_item2"></div>
                     <div class="body_item">
-                        <div class="user_id">Liu Ling</div>
-                        <div class="info_text">YOUR INFORMATION</div>
+                        <div class="user_id">双子ling00</div>
+                        <div class="info_text">此人也没有介绍</div>
                         <div class="skill_area"><img class="html5" src="img/html5_none.png"><img class="css3" src="img/css3_none.png"><img class="js" src="img/js_none.png"><img class="jquery" src="img/jquery_none.png"><img class="ps" src="img/ps_none.png"><img class="flash" src="img/flash_none.png"></div>
                     </div>
-                    <div class="body_item_temp"><div class="more_text">MORE</div></div>
+                    <div class="body_item_temp" onclick="more(2);"><div class="more_text">MORE</div></div>
                 </div>
 
+                <div class="title_bg"><div class="title"><img class="logo" src="img/logo2.png"><input class="task_btn" type="button" value="任务列表"></div></div>
             </div>
         </div>
+        <div class="foot">CopyRight &copy; Goway.me 2016 | 鄂ICP备16002853号-1 | 反馈</div>
     </div>
+
+    <script type="text/javascript">
+        document.getElementById("bg").style.minHeight=window.innerHeight+"px";
+    </script>
 
 </body>
 </html>
