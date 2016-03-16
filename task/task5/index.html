@@ -131,11 +131,12 @@
                 <div class="text_area">
                     <div style="width: 3px;height: 40px;margin: 0 15px;float: left;background-color: darkgray;"></div>
                     <div style="float: left;font-size: 18px;vertical-align: middle;width: calc(100% - 35px);margin-bottom: 10px;">这里以后是一个侧栏，这是侧栏的标题</div>
-                    <table style="font-size: 13px;">
-                        <tbody id="sign_box">
+                    <form action="http://ife.baidu.com" method="post">
+                        <table style="font-size: 13px;">
+                            <tbody id="sign_box">
                             <tr>
                                 <td class="td_left">请输入邮箱地址</td>
-                                <td class="td_right"><input class="input_border" type="email" placeholder="这是一个文本输入框" /></td>
+                                <td class="td_right"><input class="input_border" type="email" required placeholder="这是一个文本输入框" /></td>
                             </tr>
                             <tr>
                                 <td class="td_left"></td>
@@ -151,7 +152,7 @@
                             </tr>
                             <tr>
                                 <td class="td_left"></td>
-                                <td class="td_right tips_text">密码请为1-16位英文数字</td>
+                                <td class="td_right tips_text">密码请为6-16位英文数字</td>
                             </tr>
                             <tr>
                                 <td class="td_left">性别</td>
@@ -184,9 +185,10 @@
                                     <textarea rows="5" class="textarea_border">“这是一个多行输入框，输入您的个人描述”？这句话是对我说的吗？描述嘛，叫我大帅逼就好，哈哈哈哈。。。</textarea>
                                 </td>
                             </tr>
-                        </tbody>
-                    </table>
-                    <input class="submit_btn" type="button" value="确认提交">
+                            </tbody>
+                        </table>
+                        <input class="submit_btn" type="submit" value="确认提交">
+                    </form>
                 </div>
             </div>
         </div>
