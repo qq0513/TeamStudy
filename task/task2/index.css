@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+}
+.head{
+    width: 100%;
+    height: 60px;
+    background-color: #333333;
+}
+.logo_box{
+    margin: 10px 10px 10px 40px;
+    float: left;
+}
+.logo_img{
+    height: 40px;
+    width: 123px;
+}
+.menu_box{
+    vertical-align: middle;
+    float: right;
+    color: darkgrey;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.head_ol{
+    float: left;
+    -webkit-mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.5)));
+}
+.head_ol li{
+    float: left;
+    list-style: disc;
+    color: white;
+    padding-right: 25px;
+    font-family: 黑体;
+    font-weight: bold;
+    width: 70px;
+}
+.bg{
+    background-color: #dedede;
+    width: 100%;
+    height: auto;
+}
+.body{
+    width: 100%;
+}
+.body_left{
+    width: calc(100% - 10px);
+}
+.body_area{
+    background-color: #ffffff;
+    border: solid 1px silver;
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+    margin: 20px 10px 0 20px;
+}
+.body_right{
+    margin: 20px 20px 0 10px;
+    background-color: #ffffff;
+    border: solid 1px silver;
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+}
+.text_area{
+    margin: 15px;
+    font-family: 黑体;
+    overflow:hidden;
+}
+#body_ol li{
+    list-style: none;
+}
+.img_box{
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    text-align: center;
+    border: solid 1px #000;
+}
+.img{
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+}
+#img li{
+    float: left;
+    list-style: none;
+    margin: 15px 15px 0 0;
+}
+.body_table{
+    width: 100%;
+    border: none;
+}
+.body_table td{
+    padding: 5px;
+}
+.td_left{
+    text-align: right;
+    width: 30%;
+    padding: 3px 3px 3px 0;
+}
+.td_right{
+    text-align: left;
+    padding: 3px 0 3px 3px;
+}
+.td_mid{
+    text-align: center;
+    padding: 5px 0;
+}
+.input_border{
+    border: solid 1px #746E70;
+    width: 140px;
+}
+.tips_text{
+    padding: 5px 0 15px 0;
+    color: darkgray;
+}
+.textarea_border{
+    width: 90%;
+    border: solid 1px #746E70;
+}
+.submit_btn{
+    height: 40px;
+    border: solid 1px dodgerblue;
+    background-color: royalblue;
+    border-radius: 5px;
+    width: 100%;
+    color: #fff;
+    font-weight: bold;
+}
+.foot{
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 20px;
+    height: 60px;
+    background-color: #000;
+    float: left;
+    color: #fff;
+    text-align: center;
+}
