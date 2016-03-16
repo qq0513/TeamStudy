@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title id="page_title">任务效果页</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .view_head{
+            width: 100%;
+            padding: 10px 0;
+            background-color: dodgerblue;
+            overflow: hidden;
+            text-align: center;
+        }
+        .back_btn{
+            width: 100px;
+            padding: 5px;
+            font-size: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            color: dodgerblue;
+            text-align: center;
+            font-family: 黑体;
+            float: left;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .title_text{
+            margin-left: -110px;
+            font-size: 30px;
+            font-family: 黑体;
+            color: #fff;
+        }
+    </style>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+</head>
+<body>
+    <div class="view_head">
+        <div class="back_btn" onclick="back_home();">返回主页</div><span class="title_text" id="task_name">任务名</span>
+    </div>
+    <article id="page_show">
+        <div style="text-align: center;width: 100%"><h2>页面载入中……</h2></div>
+    </article>
+    <script type="text/javascript">
+        var task_name=new Array("任务一：零基础HTML编码","任务二：零基础HTML及CSS编码（一）","任务三：三栏式布局",
+                "任务四：定位和居中问题","任务五：零基础HTML及CSS编码（二）","任务六：通过HTML及CSS模拟报纸排版",
+                "任务七：实现常见的技术产品官网的页面架构及样式布局","任务八：响应式网格（栅格化）布局",
+                "任务九：使用HTML/CSS实现一个复杂页面","任务十：Flexbox 布局练习","任务十一：移动Web页面布局实践","任务十二：学习CSS 3的新特性");
+        var strUrl=window.location.href;
+        var i=strUrl.substr(strUrl.indexOf("=")+1);
+        $("#task_name").html(task_name[i-1]);
+        $("#page_title").html($("#page_title").html()+" - "+task_name[i-1]);
+        var xmlhttp;
+        if(window.XMLHttpRequest)
+        {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp=new XMLHttpRequest();
+        }
+        else
+        {
+            // code for IE6, IE5
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        //onreadystatechange 存储函数（或函数名），每当 readyState 属性改变时，就会调用该函数。
+        xmlhttp.onreadystatechange=function()
+        {
+            //readyState
+            //存有 XMLHttpRequest 的状态。从 0 到 4 发生变化。
+            //0: 请求未初始化
+            //1: 服务器连接已建立
+            //2: 请求已接收
+            //3: 请求处理中
+            //4: 请求已完成，且响应已就绪
+            //status
+            //200: "OK"
+            //404: 未找到页面
+            if (xmlhttp.readyState==4 && xmlhttp.status==200)
+            {
+                var html=xmlhttp.responseText;
+                document.getElementById("page_show").innerHTML=html.replace(/src="/g,'src="task'+i+'/').replace(/index.css/g,"task"+i+"/index.css").replace(/index.js/g,"task"+i+"/index.js");
+            }
+        }
+        xmlhttp.open("GET","task"+i+"/index.html",true);
+        xmlhttp.send();
+
+        function back_home(){
+            window.location.href='../index.html';
+        }
+
+    </script>
+</body>
+</html>

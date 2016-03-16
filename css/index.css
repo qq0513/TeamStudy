@@ -150,6 +150,7 @@ body{
     font-weight: bold;
     font-family: 楷体;
     color: dodgerblue;
+    cursor: pointer;
 }
 .foot{
     float: left;
@@ -158,4 +159,63 @@ body{
     text-align: center;
     width: 100%;
     margin-top: 20px;
+}
+.bg_box{
+    background-color: #000;
+    opacity: 0.6;
+    position: absolute;
+    width: 100%;
+    min-width: 1000px;
+    height: 100px;
+    z-index: 997;
+    top: 0;
+    left: 0;
+}
+.more_box{
+    position: absolute;
+    width: 400px;
+    background-color: #dedede;
+    height: 300px;
+    z-index: 998;
+}
+.task_box{
+    position: absolute;
+    width: 660px;
+    background-color: #dedede;
+    height: auto;
+    z-index: 999;
+    padding: 5px;
+    border-radius: 10px;
+}
+.task_item{
+    width: 120px;
+    border: solid 1px darkgray;
+    float: left;
+    margin: 5px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 5px;
+    font-family: 黑体;
+    font-size: 20px;
+    padding: 10px 0;
+}
+.task_yes{
+    background-color: dodgerblue;
+    color: #fff;
+    cursor: pointer;
+}
+.task_no{
+    background-color: darkgray;
+    color: #fff;
+    cursor: default;
+}
+.task_title{
+    background-color: dodgerblue;
+    width: 100%;
+    padding: 5px;
+    margin: -5px -5px 5px -5px;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    font-family: 黑体;
+    font-size: 20px;
 }

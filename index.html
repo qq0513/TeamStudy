@@ -5,6 +5,7 @@
     <title>T-Soft - 团队信息</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
 </head>
 <body>
     <div id="bg" class="background">
@@ -27,7 +28,7 @@
                     <div class="body_item2"></div>
                     <div class="body_item">
                         <div class="user_id">陵七七最爱的我</div>
-                        <div class="info_text">此人没有介绍</div>
+                        <div class="info_text">立志成为程序猿的女人，有好吃的请带上我。</div>
                         <div class="skill_area"><img class="html5" src="img/html5.png"><img class="css3" src="img/css3.png"><img class="js" src="img/js.png"><img class="jquery" src="img/jquery_none.png"><img class="ps" src="img/ps_none.png"><img class="flash" src="img/flash_none.png"></div>
                     </div>
                     <div class="body_item_temp" onclick="more(1);"></a><div class="more_text">MORE</div></div>
@@ -38,24 +39,46 @@
                     <div class="body_item2"></div>
                     <div class="body_item">
                         <div class="user_id">双子ling00</div>
-                        <div class="info_text">此人也没有介绍</div>
+                        <div class="info_text">此人没有介绍</div>
                         <div class="skill_area"><img class="html5" src="img/html5_none.png"><img class="css3" src="img/css3_none.png"><img class="js" src="img/js_none.png"><img class="jquery" src="img/jquery_none.png"><img class="ps" src="img/ps_none.png"><img class="flash" src="img/flash_none.png"></div>
                     </div>
                     <div class="body_item_temp" onclick="more(2);"><div class="more_text">MORE</div></div>
                 </div>
 
-                <div class="title_bg"><div class="title"><img class="logo" src="img/logo2.png"><input class="task_btn" type="button" value="任务列表"></div></div>
+                <div class="title_bg"><div class="title"><img class="logo" src="img/logo2.png"><input class="task_btn" type="button" value="任务列表" onclick="task();"></div></div>
             </div>
         </div>
         <div class="foot">CopyRight &copy; Goway.me 2016 | 鄂ICP备16002853号-1 | 反馈</div>
     </div>
-
+    <!--back box-->
+    <div id="bg_box" class="bg_box"></div>
+    <!--more box-->
+    <div id="more_box" class="more_box"></div>
+    <!--task box-->
+    <div id="task_box" class="task_box">
+        <div class="task_title">任务列表</div>
+        <div class="task_item task_yes" title="任务一：零基础HTML编码" onclick="to_page(1);">任务一</div>
+        <div class="task_item task_yes" title="任务二：零基础HTML及CSS编码（一）" onclick="to_page(2);">任务二</div>
+        <div class="task_item task_no" title="任务三：三栏式布局" onclick="to_page(3);">任务三</div>
+        <div class="task_item task_no" title="任务四：定位和居中问题" onclick="to_page(4);">任务四</div>
+        <div class="task_item task_yes" title="任务五：零基础HTML及CSS编码（二）" onclick="to_page(5);">任务五</div>
+        <div class="task_item task_no" title="任务六：通过HTML及CSS模拟报纸排版" onclick="to_page(6);">任务六</div>
+        <div class="task_item task_no" title="任务七：实现常见的技术产品官网的页面架构及样式布局" onclick="to_page(7);">任务七</div>
+        <div class="task_item task_no" title="任务八：响应式网格（栅格化）布局" onclick="to_page(8);">任务八</div>
+        <div class="task_item task_no" title="任务九：使用HTML/CSS实现一个复杂页面" onclick="to_page(9);">任务九</div>
+        <div class="task_item task_no" title="任务十：Flexbox 布局练习" onclick="to_page(10);">任务十</div>
+        <div class="task_item task_no" title="任务十一：移动Web页面布局实践" onclick="to_page(11);">任务十一</div>
+        <div class="task_item task_no" title="任务十二：学习CSS 3的新特性" onclick="to_page(12);">任务十二</div>
+    </div>
     <script type="text/javascript">
         if(window.innerHeight<610){
             document.getElementById("bg").style.minHeight="610px";
         }else{
             document.getElementById("bg").style.minHeight=window.innerHeight+"px";
         }
+        $("#bg_box").hide();
+        $("#more_box").hide();
+        $("#task_box").hide();
 
     </script>
 
