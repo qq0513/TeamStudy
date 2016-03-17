@@ -88,7 +88,9 @@
             if (xmlhttp.readyState==4 && xmlhttp.status==200)
             {
                 var html=xmlhttp.responseText;
-                document.getElementById("page_show").innerHTML=html.replace(/src="/g,'src="task'+i+'/').replace(/index.css/g,"task"+i+"/index.css").replace(/index.js/g,"task"+i+"/index.js");
+                $("#page_show").html(html.replace(/src="/g,'src="task'+i+'/').replace(/index.css/g,"task"+i+"/index.css").replace(/index.js/g,"task"+i+"/index.js"));
+            }else{
+                $("#page_show").html('<div style="text-align: center;width: 100%"><h2>任务完成中，暂无页面效果！</h2></div>');
             }
         }
         xmlhttp.open("GET","task"+i+"/index.html",true);
