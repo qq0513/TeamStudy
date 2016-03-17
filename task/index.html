@@ -28,10 +28,29 @@
             cursor: pointer;
         }
         .title_text{
-            margin-left: -110px;
+            margin-left: -80px;
             font-size: 30px;
             font-family: 黑体;
             color: #fff;
+        }
+        .more_btn{
+            float: right;
+            color: #fff;
+            cursor: pointer;
+            margin-right: 15px;
+            font-size: 20px;
+        }
+        .menu_box_right{
+            background-color: dodgerblue;
+            float: right;
+            width: 150px;
+            height: 100px;
+            color: #fff;
+        }
+        .menu_box_right li{
+            list-style: none;
+            margin-left: -20px;
+            height: 40px;
         }
     </style>
     <script type="text/javascript" src="../js/jquery.min.js"></script>
@@ -47,12 +66,19 @@
 </head>
 <body>
     <div class="view_head">
-        <div class="back_btn" onclick="back_home();">返回主页</div><span class="title_text" id="task_name">任务名</span>
+        <div class="back_btn" onclick="back_home();">返回主页</div><span class="title_text" id="task_name">任务名</span><div class="more_btn" onclick="show_menu()"><b>...</b></div>
+    </div>
+    <div id="menu_box" class="menu_box_right">
+        <ol>
+            <li>查看源代码</li>
+            <li>查看任务说明</li>
+        </ol>
     </div>
     <article id="page_show">
-        <div style="text-align: center;width: 100%"><h2>页面载入中……</h2></div>
+        <div style="text-align: center;width: 100%;"><h2>页面载入中……</h2></div>
     </article>
     <script type="text/javascript">
+        $("#menu_box").hide();
         var task_name=new Array("任务一：零基础HTML编码","任务二：零基础HTML及CSS编码（一）","任务三：三栏式布局",
                 "任务四：定位和居中问题","任务五：零基础HTML及CSS编码（二）","任务六：通过HTML及CSS模拟报纸排版",
                 "任务七：实现常见的技术产品官网的页面架构及样式布局","任务八：响应式网格（栅格化）布局",
@@ -97,9 +123,12 @@
         xmlhttp.send();
 
         function back_home(){
-            window.location.href='../index.html';
+            window.location.href= '../index.html';
         }
 
+        function show_menu(){
+            $("#menu_box").slideToggle("slow");
+        }
     </script>
 </body>
 </html>
