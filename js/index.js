@@ -24,8 +24,10 @@ function task(){
 
     h=h+"px";
     document.getElementById("bg_box").style.height=h;
-    $("#bg_box").show();
-    $("#task_box").show();
+    //$("#bg_box").show();
+    //$("#task_box").show();
+    $("#bg_box").slideDown("slow");
+    $("#task_box").slideDown("slow");
 }
 
 function to_page(index){
@@ -33,7 +35,10 @@ function to_page(index){
 }
 
 function close_box(){
-    $("#bg_box").hide();
-    $("#task_box").hide();
-    $("#more_box").hide();
+    //$("#bg_box").hide();
+    //$("#task_box").hide();
+    //$("#more_box").hide();
+    $("#bg_box").slideUp("slow");
+    $("#task_box").slideUp("slow");
+    $("#more_box").slideUp("slow");
 }
