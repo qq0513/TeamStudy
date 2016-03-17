@@ -89,7 +89,7 @@
             {
                 var html=xmlhttp.responseText;
                 $("#page_show").html(html.replace(/src="/g,'src="task'+i+'/').replace(/index.css/g,"task"+i+"/index.css").replace(/index.js/g,"task"+i+"/index.js"));
-            }else{
+            }else if(xmlhttp.status==404){
                 $("#page_show").html('<div style="text-align: center;width: 100%"><h2>任务完成中，暂无页面效果！</h2></div>');
             }
         }
