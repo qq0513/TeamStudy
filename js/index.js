@@ -31,3 +31,9 @@ function task(){
 function to_page(index){
     window.open("task/index.html?id="+index);
 }
+
+function close_box(){
+    $("#bg_box").hide();
+    $("#task_box").hide();
+    $("#more_box").hide();
+}
