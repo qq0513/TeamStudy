@@ -41,16 +41,26 @@
             font-size: 20px;
         }
         .menu_box_right{
+            position: absolute;
+            right: 0px;
             background-color: dodgerblue;
-            float: right;
             width: 150px;
-            height: 100px;
             color: #fff;
+            z-index: 999;
+        }
+        .menu_box_right ol{
+
+            margin: 0 0 0 -40px;
         }
         .menu_box_right li{
             list-style: none;
-            margin-left: -20px;
             height: 40px;
+            padding: 15px 0 0 20px;
+            cursor: pointer;
+        }
+        .menu_box_right li:hover{
+            background-color: white;
+            color: dodgerblue;
         }
     </style>
     <script type="text/javascript" src="../js/jquery.min.js"></script>
@@ -66,11 +76,14 @@
 </head>
 <body>
     <div class="view_head">
-        <div class="back_btn" onclick="back_home();">返回主页</div><span class="title_text" id="task_name">任务名</span><div class="more_btn" onclick="show_menu()"><b>...</b></div>
+        <div class="back_btn" onclick="back_home();">返回主页</div><span class="title_text" id="task_name">任务名</span>
+        <div class="more_btn" onclick="show_menu()" onmouseover="$('#menu_box').slideDown('slow');"><b>...</b></div>
     </div>
     <div id="menu_box" class="menu_box_right">
-        <ol>
-            <li>查看源代码</li>
+        <ol onmouseout="$('#menu_box').slideUp('slow');">
+            <li onclick="to_code()">查看源代码</li>
+            <li onclick="to_task()">查看任务说明</li>
+            <li>查看任务说明</li>
             <li>查看任务说明</li>
         </ol>
     </div>
@@ -129,6 +142,15 @@
         function show_menu(){
             $("#menu_box").slideToggle("slow");
         }
+
+        function to_task(){
+            window.open('http://ife.baidu.com/task/detail?taskId='+i);
+            $("#menu_box").slideToggle("slow");
+        }
+         function to_code(){
+             window.open('https://github.com/terryme007/TeamStudy/tree/master/task/task'+i+'/index.html');
+             $("#menu_box").slideToggle("slow");
+         }
     </script>
 </body>
 </html>
