@@ -1,0 +1,32 @@
+.page_width{
+    width: 980px;
+}
+.head_logo{
+    width: 110px;
+    height: 61px;
+    background-color: #d45d5c;
+    color: #ffffff;
+    font-family: 黑体;
+    font-size: 12px;
+}
+.head_time{
+    color: #d45d5c;
+    font-family: 黑体;
+    font-size: 12px;
+}
+.body_img{
+    width: 641px;
+    height: 301px;
+}
+.green_box{
+    height: 301px;
+    width: 191px;
+    opacity: 0.5;
+    background-color: green;
+}
+.red_box{
+    height: 301px;
+    width: 191px;
+    opacity: 0.5;
+    background-color: #cc7680;
+}
