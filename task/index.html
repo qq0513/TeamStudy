@@ -77,10 +77,10 @@
 <body>
     <div class="view_head">
         <div class="back_btn" onclick="back_home();">返回主页</div><span class="title_text" id="task_name">任务名</span>
-        <div class="more_btn" onclick="show_menu()" onmouseover="$('#menu_box').slideDown('slow');"><b>...</b></div>
+        <div class="more_btn" onclick="show_menu()"><b>...</b></div>
     </div>
     <div id="menu_box" class="menu_box_right">
-        <ol onmouseout="$('#menu_box').slideUp('slow');">
+        <ol>
             <li onclick="to_code()">查看源代码</li>
             <li onclick="to_task()">查看任务说明</li>
         </ol>
