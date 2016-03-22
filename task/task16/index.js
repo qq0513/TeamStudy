@@ -34,7 +34,7 @@ function addAqiData() {
 function renderAqiList() {
     $("#aqi-table").html("<tr><td>城市</td><td>空气质量</td><td>操作</td></tr>");
     for(var j=0;j<i;j++){
-        var html="<tr><td>"+aqiData[j][0]+"</td><td>"+aqiData[j][1]+"</td><td><button onclick='delBtnHandle("+j+")'>删除"+j+"</button></td></tr>";
+        var html="<tr><td>"+aqiData[j][0]+"</td><td>"+aqiData[j][1]+"</td><td><button onclick='delBtnHandle("+j+")'>删除</button></td></tr>";
         $("#aqi-table").html($("#aqi-table").html()+html);
     }
     var j=0;
