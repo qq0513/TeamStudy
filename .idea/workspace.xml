@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b088dd8-9163-4a60-b5ae-1ff5e7d83c90" name="Default" comment="change">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task/task17/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task/task17/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task/task17/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task/index.html" afterPath="$PROJECT_DIR$/task/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task/task17/index.js" afterPath="$PROJECT_DIR$/task/task17/index.js" />
     </list>
     <ignored path="TeamStudy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,9 +27,21 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/task/task17/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.0">
+            <state vertical-scroll-proportion="-11.25">
               <caret line="24" column="33" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="33" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/task/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.583333">
+              <caret line="147" column="68" selection-start-line="147" selection-start-column="68" selection-end-line="147" selection-end-column="68" />
+              <folding>
+                <marker date="1458649538236" expanded="true" signature="4442:4472" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -41,13 +49,10 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/task/task17/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.66195524">
-              <caret line="209" column="0" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.7573616">
+              <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
               <folding>
-                <marker date="1458748915459" expanded="true" signature="1937:2070" placeholder="..." />
-                <marker date="1458748915459" expanded="true" signature="1937:2071" placeholder="..." />
-                <marker date="1458748915459" expanded="true" signature="1995:2070" placeholder="..." />
-                <marker date="1458748915459" expanded="true" signature="1998:2070" placeholder="..." />
+                <marker date="1458749272789" expanded="true" signature="2050:2184" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -367,7 +372,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1042" extended-state="7" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17708333" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -729,33 +734,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/task/task17/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.25">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/task/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.0258303">
-          <caret line="91" column="30" selection-start-line="91" selection-start-column="30" selection-end-line="91" selection-end-column="30" />
+        <state vertical-scroll-proportion="-14.583333">
+          <caret line="147" column="68" selection-start-line="147" selection-start-column="68" selection-end-line="147" selection-end-column="68" />
           <folding>
             <marker date="1458649538236" expanded="true" signature="4442:4472" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/task/task17/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.0">
-          <caret line="24" column="33" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/task/task17/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66195524">
-          <caret line="209" column="0" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.7573616">
+          <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
           <folding>
-            <marker date="1458748915459" expanded="true" signature="1937:2070" placeholder="..." />
-            <marker date="1458748915459" expanded="true" signature="1937:2071" placeholder="..." />
-            <marker date="1458748915459" expanded="true" signature="1995:2070" placeholder="..." />
-            <marker date="1458748915459" expanded="true" signature="1998:2070" placeholder="..." />
+            <marker date="1458749272789" expanded="true" signature="2050:2184" placeholder="..." />
           </folding>
         </state>
       </provider>
