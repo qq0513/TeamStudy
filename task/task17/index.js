@@ -65,28 +65,29 @@ function renderChart() {
     var g_width=0;
     var start_index=0;
     var data_num=0;
-    switch (pageState.nowGraTime){
-        case "day":{
-            g_width=Math.floor((600-91*2)/91);
-            start_index=91*(pageState.nowSelectCity-1);
-            data_num=91;
-        }break;
-        case "week":{
-            g_width=Math.floor((600-13*2)/13);
-            start_index=819+13*(pageState.nowSelectCity-1);
-            data_num=13;
-        }break;
-        case "month":{
-            g_width=Math.floor((600-3*2)/3);
-            start_index=936+3*(pageState.nowSelectCity-1);
-            data_num=3;
-        }break;
+    if(pageState.nowSelectCity>=-0){
+        switch (pageState.nowGraTime){
+            case "day":{
+                g_width=Math.floor((600-91*2)/91);
+                start_index=91*(pageState.nowSelectCity-1);
+                data_num=91;
+            }break;
+            case "week":{
+                g_width=Math.floor((600-13*2)/13);
+                start_index=819+13*(pageState.nowSelectCity-1);
+                data_num=13;
+            }break;
+            case "month":{
+                g_width=Math.floor((600-3*2)/3);
+                start_index=936+3*(pageState.nowSelectCity-1);
+                data_num=3;
+            }break;
+        }
+        for(var i=0;i<data_num;i++){
+            var html='<div class="dg" style="width:'+g_width+'px;height:'+chartData[start_index+i]+'px;top: '+(500-chartData[start_index+i]-2)+'px;left: '+(g_width*i+(i-1)*2)+'px;"></div>';
+            $(".aqi-chart-wrap").append(html);
+        }
     }
-    for(var i=0;i<data_num;i++){
-        var html='<div class="dg" style="width:'+g_width+'px;height:'+chartData[start_index+i]+'px;top: '+(500-chartData[start_index+i]-2)+'px;left: '+(g_width*i+(i-1)*2)+'px;"></div>';
-        $(".aqi-chart-wrap").append(html);
-    }
-
 }
 
 /**
